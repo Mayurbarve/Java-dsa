@@ -44,6 +44,10 @@ Grade: A
 
 public class Main {
     void main() {
+        StudentReportCard std = new StudentReportCard("Rahul", 101, 85.0, 72.0, 90.0);
+
+        std.printReportCard();
 
     }
+
 }
