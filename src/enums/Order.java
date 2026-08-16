@@ -43,13 +43,12 @@ public class Order {
     }
 
     public void displayInfo(){
-        System.out.printf(
-                "Order %s | Status: %s | Payment: %s | Amount: $%.2f (with fees: $%.2f)%n",
-                oderId,
-                status,
-                paymentMethod.getDisplayName(),
-                amount,
-                getTotalAmount()
+        System.out.println(
+                "Order ID: " + oderId + " | " +
+                "Order Status: " + status + " | " +
+                "Payment Method: " + paymentMethod.getDisplayName() + " | " +
+                "Order Amount: " + amount + " | " +
+                "Total Amount: " + getTotalAmount()
         );
     }
 
