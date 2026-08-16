@@ -35,7 +35,7 @@ Output: 4
         }
       }
 
-      return left; //in last return left cause left cross the right
+      return left; //in last return left cause cross the right
     }
 
 
