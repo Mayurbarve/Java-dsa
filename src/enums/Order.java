@@ -13,7 +13,7 @@ public class Order {
         this.status = OrderStatus.PLACED;
     }
 
-    public boolean advanceStatus(){
+    public boolean updateStatus(){
         switch(status){
             case PLACED:
                 status = OrderStatus.CONFIRMED;
@@ -39,7 +39,7 @@ public class Order {
     }
 
     public double getTotalAmount(){
-        return amount + (amount * paymentMethod.getFeePercent() / 100);
+        return amount + (amount * paymentMethod.getFeePercent() / 100); //
     }
 
     public void displayInfo(){

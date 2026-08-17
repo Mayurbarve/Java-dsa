@@ -1,7 +1,7 @@
 package Interfaces;
 
 public class AlertService {
-    private NotificationService notificationService;
+    private final NotificationService notificationService;
 
     public AlertService(NotificationService notificationService){
         this.notificationService = notificationService;
