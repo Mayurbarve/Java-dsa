@@ -1,5 +1,6 @@
 package SystemDesign.Creational.AbstractFactory;
 
+//Concrete Factories
 public class MacOsFactory implements GUIFactory{
 
     @Override

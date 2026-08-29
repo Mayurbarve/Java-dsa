@@ -5,16 +5,6 @@ public class ListImplementation {
     Node head;
     //static Node tail;
 
-    static class Node{
-        int data;
-        Node next;
-
-        Node(int data){
-            this.data = data;
-        }
-    }
-
-
     void addLast(int data){
         Node newNode = new Node(data);
 

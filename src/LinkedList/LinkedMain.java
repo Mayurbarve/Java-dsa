@@ -6,20 +6,38 @@ package LinkedList;
 //Reverse LinkedList
 //Detect Cycle // fast and slow
 
+import LinkedList.Questions.RemoveDuplicateII;
+
 import java.util.*;
 
 public class LinkedMain {
     public static void main(String[] args) {
         ListImplementation list = new ListImplementation();
-        LinkedList<Integer> ls = new LinkedList<>();
 
-
-        list.addFirst(45);
-        list.addLast(8);
-        list.addFirst(7);
-        list.addLast(9);
-        list.addLast(10);
+        list.addFirst(5);
+        list.addFirst(4);
+        list.addFirst(4);
+        list.addFirst(3);
+        list.addFirst(3);
+        list.addFirst(2);
+        list.addFirst(1);
 
         list.printList();
+
+        Node head = list.head;
+
+        //Remove Duplicate II
+        RemoveDuplicateII removeDuplicate = new RemoveDuplicateII();
+        Node ans = removeDuplicate.deleteDuplicates(head);
+
+        while(ans!=null){
+            System.out.print(ans.data+" -> ");
+            ans = ans.next;
+        }
+        System.out.println("null");
+
+
+
+        
     }
 }
