@@ -70,7 +70,7 @@ REQUIREMENTS
 
 
 
-package SysDesigns.SpitWiseApp;
+package SystemDesignsProblems.SpitWiseApp;
 
 public class SpitWiseMain {
     public static void main(String[] args) {

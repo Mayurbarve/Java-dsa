@@ -5,7 +5,6 @@ package SystemDesign.Creational.Singleton;
 
             CacheManager cm = CacheManager.INSTANCE;
             CacheManager cm2 = CacheManager.INSTANCE;
-            CacheManager cm3 = CacheManager.INSTANCE;
 
             System.out.println("Check Point for Same Instance? " + (cm == cm2));
 

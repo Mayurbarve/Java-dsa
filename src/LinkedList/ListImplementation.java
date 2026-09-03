@@ -32,7 +32,7 @@ public class ListImplementation {
         head = newNode;
     }
 
-    void printList(){
+    void printList(Node head){
         if(head == null){
             System.out.println("List is empty");
             return;
